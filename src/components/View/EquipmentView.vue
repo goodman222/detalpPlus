@@ -1,3 +1,7 @@
-<script setup></script>
+<script setup>
+import EquipmentSection from "../sections/EquipmentSection.vue";
+</script>
 
-<template><p class="underline">Equipment</p></template>
+<template>
+  <EquipmentSection></EquipmentSection>
+</template>

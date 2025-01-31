@@ -6,7 +6,7 @@ import RedHeader from "../RedHeader.vue";
     class="bg-grey-background py-12 flex justify-between items-center flex-col w-full"
   >
     <div
-      class="flex flex-col justify-between items-center max-w-[852px] w-full"
+      class="flex flex-col justify-between items-center max-w-(--page) w-full"
     >
       <RedHeader>Наши клиенты</RedHeader>
       <div class="flex flex-row justify-between items-center w-full mt-6">

@@ -1,3 +1,7 @@
-<script setup></script>
+<script setup>
+import FeedbackSection from "../sections/FeedbackSection.vue";
+</script>
 
-<template><p class="underline">FeedbackView</p></template>
+<template>
+  <FeedbackSection></FeedbackSection>
+</template>

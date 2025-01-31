@@ -3,7 +3,7 @@ import AdvantageItem from "../AdvantageItem.vue";
 </script>
 <template>
   <div class="bg-grey-background py-14">
-    <div class="mx-auto max-w-[852px] flex flex-col">
+    <div class="mx-auto max-w-(--page) flex flex-col">
       <AdvantageItem class="mb-12" direction="direct" img="advantage1">
         <template v-slot:header>
           Многолетний опыт, профессионализм и инновационный подход

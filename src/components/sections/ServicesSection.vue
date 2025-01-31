@@ -10,7 +10,7 @@ import ServicesItem from "../ServicesItem.vue";
     <div class="w-full h-full absolute bg-dark-filter"></div>
 
     <div
-      class="z-50 text-white flex flex-col w-full max-w-[852px] justify-center items-center text-center"
+      class="z-50 text-white flex flex-col w-full max-w-(--page) justify-center items-center text-center"
     >
       <BannerText class="mb-12">Наши специализации и услуги</BannerText>
       <div class="flex flex-row justify-between w-full">

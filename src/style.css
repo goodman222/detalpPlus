@@ -32,9 +32,11 @@
   --color-grey-background: #eeeeee;
   --color-accent: #9c0105;
   --color-accent-light: #bf3639;
+  --color-footer: #5a5a64;
   --font-manrope: "Manrope";
   --font-bowler: "Bowler";
   --color-dark-blue: #16246d;
   --color-dark-filter: rgba(0, 0, 0, 0.7);
-  --page: "852px";
+  /* --page: "852px"; */
+  --page: 852px;
 }

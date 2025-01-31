@@ -1,0 +1,26 @@
+<script setup>
+import BannerText from "../BannerText.vue";
+import MainButton from "../MainButton.vue";
+</script>
+
+<template>
+  <section
+    class="relative bg-[url('./src/assets/img/consultations-bg.png')] bg-center bg-no-repeat bg-cover flex justify-center items-center flex-col py-16"
+  >
+    <div class="w-full h-full absolute bg-dark-filter"></div>
+    <div
+      class="z-50 text-white flex flex-col w-full max-w-(--page) items-start justify-start items-center text-center"
+    >
+      <BannerText class="text-left"
+        >Получите консультацию<br />
+        по вашему проекту!</BannerText
+      >
+      <p class="font-manrope mt-7 mb-12 text-left">
+        Проконсультируем по вопросам изготовления<br />
+        и проектирования деталей и металлообработки.<br />
+        Рассчитаем финальную смету за проект.
+      </p>
+      <MainButton>ОСТАВИТЬ ЗАЯВКУ</MainButton>
+    </div>
+  </section>
+</template>
