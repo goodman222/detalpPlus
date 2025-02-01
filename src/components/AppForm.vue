@@ -7,7 +7,7 @@ import MainButton from "./MainButton.vue";
 <template>
   <form
     action=""
-    class="bg-[#0A0E28] px-16 py-9 flex flex-col items-center justify-between w-[70%] mx-auto"
+    class="bg-dark-bg px-16 py-9 flex flex-col items-center justify-between w-[70%] mx-auto"
   >
     <BannerText class="text-3xl mb-4">Обратная связь</BannerText>
     <FormInput type="text" placeholder="Имя"> </FormInput>

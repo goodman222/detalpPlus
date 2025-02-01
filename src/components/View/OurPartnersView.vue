@@ -1,8 +1,9 @@
 <script setup>
 import ConsultationSection from "../sections/ConsultationSection.vue";
+import PartnersSection from "../sections/PartnersSection.vue";
 </script>
 
 <template>
-  <p class="underline">Our Partners</p>
+  <PartnersSection></PartnersSection>
   <ConsultationSection></ConsultationSection>
 </template>

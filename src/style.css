@@ -2,6 +2,13 @@
 
 @font-face {
   font-family: "Manrope";
+  src: url("./assets/fonts/Manrope/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
   src: url("./assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -36,7 +43,7 @@
   --font-manrope: "Manrope";
   --font-bowler: "Bowler";
   --color-dark-blue: #16246d;
+  --color-dark-bg: #0a0e28;
   --color-dark-filter: rgba(0, 0, 0, 0.7);
-  /* --page: "852px"; */
   --page: 852px;
 }
