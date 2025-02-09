@@ -6,7 +6,7 @@ const store = useStore();
 
 <template>
   <nav
-    class="flex flex-col h-lvh h-[calc(100vh - 56px)] w-full overflow-y-auto fixed top-14 z-100 px-2 gap-1.5 bg-white"
+    class="flex flex-col h-lvh h-[calc(100vh - 56px)] w-full overflow-y-auto fixed top-14 z-100 px-2 bg-white max-md:border-t-2 max-md:border-[#BBBBBB]"
     @click="store.menuStateChange"
   >
     <navItem href="/about"> О компании </navItem>

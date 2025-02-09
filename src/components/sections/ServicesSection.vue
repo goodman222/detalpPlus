@@ -12,8 +12,12 @@ import ServicesItem from "../ServicesItem.vue";
     <div
       class="z-50 text-white flex flex-col w-full max-w-(--page) justify-center items-center text-center"
     >
-      <BannerText class="mb-12">Наши специализации и услуги</BannerText>
-      <div class="flex flex-row justify-between w-full">
+      <BannerText class="mb-12 max-md:text-lg"
+        >Наши специализации и услуги</BannerText
+      >
+      <div
+        class="flex flex-row justify-between w-full max-md:flex-col max-md:items-center max-md:gap-6"
+      >
         <ServicesItem :img="'Vector1'"
           >Высокоточная металлообработка</ServicesItem
         >

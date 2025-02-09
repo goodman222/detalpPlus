@@ -1,6 +1,13 @@
 <script setup>
 import BannerText from "../BannerText.vue";
 import MainButton from "../MainButton.vue";
+import FormPopup from "./../FormPopup.vue";
+
+import { usePopupStore } from "../../stores/popup.js";
+const popupStore = usePopupStore();
+function clickBtnHandler() {
+  popupStore.openPopup(FormPopup);
+}
 </script>
 
 <template>
@@ -15,12 +22,13 @@ import MainButton from "../MainButton.vue";
         >Получите консультацию по вашему проекту!</BannerText
       >
       <p
+        v-textSlide
         class="font-manrope mt-7 mb-12 text-left w-[50%] max-md:text-xs max-md:w-full max-md:mt-3.5 max-md:mb-8"
       >
         Проконсультируем по вопросам изготовления и проектирования деталей и
         металлообработки. Рассчитаем финальную смету за проект.
       </p>
-      <MainButton>ОСТАВИТЬ ЗАЯВКУ</MainButton>
+      <MainButton @click="clickBtnHandler">ОСТАВИТЬ ЗАЯВКУ</MainButton>
     </div>
   </section>
 </template>

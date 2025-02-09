@@ -7,7 +7,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <RouterLink :to="href" class="font-manrope font-normal text-sm"
+  <RouterLink
+    :to="href"
+    class="font-manrope font-normal text-sm max-md:text-center max-md:py-5 max-md:border-b-2 max-md:border-[#BBBBBB]"
     ><slot></slot
   ></RouterLink>
 </template>

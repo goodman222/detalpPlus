@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, toRef } from "vue";
 
 const props = defineProps({
   imgArray: Array,
@@ -8,16 +8,19 @@ const props = defineProps({
   height: Number,
 });
 
-const { imgArray, folder, visibleLength } = props;
+const { imgArray, folder } = props;
+
+const visibleLength = toRef(props, "visibleLength");
+
 const length = imgArray.length;
 
 let indexStart = ref(0);
-let indexEnd = ref(visibleLength);
+let indexEnd = ref(visibleLength.value);
 
 const visibleImgArray = ref(imgArray.slice(indexStart.value, indexEnd.value));
 
 function changeImgPosition(value) {
-  if (length === visibleLength) {
+  if (length === visibleLength.value) {
     return;
   }
   indexStart.value += value;

@@ -13,7 +13,9 @@ const imgUrl = `./src/assets/img/services/${props.img}.png`;
     >
       <img :src="imgUrl" alt="" />
     </div>
-    <h4 class="text-white font-manrope text-base uppercase font-extrabold">
+    <h4
+      class="text-white font-manrope text-base uppercase font-extrabold max-md:text-sm"
+    >
       <slot></slot>
     </h4>
   </div>

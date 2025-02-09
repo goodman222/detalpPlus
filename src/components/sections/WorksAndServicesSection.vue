@@ -5,14 +5,14 @@ import WorkAndServicesItem from "../WorkAndServicesItem.vue";
 </script>
 
 <template>
-  <section class="w-full bg-grey-background py-11">
+  <section class="w-full md:bg-grey-background py-11 max-md:px-3.5">
     <div class="w-full max-w-(--page) mx-auto flex flex-col">
-      <PageHeader
+      <PageHeader class="max-md:self-start"
         ><template v-slot:header>Виды работ и услуг</template>
       </PageHeader>
-      <div class="flex flex-row justify-between gap-10">
+      <div class="flex flex-row justify-between gap-10 max-md:flex-col">
         <div>
-          <RedHeader class="mb-8">Услуги</RedHeader>
+          <RedHeader class="mb-8 max-md:hidden">Услуги</RedHeader>
           <div class="border-t-2 border-[#BBBBBB]">
             <WorkAndServicesItem
               >Изготовление металлических деталей на токарных станках с ЧПУ по
@@ -35,7 +35,7 @@ import WorkAndServicesItem from "../WorkAndServicesItem.vue";
             >
           </div>
         </div>
-        <div class="repeat-min grid gap-5 w-[70%]">
+        <div class="repeat-min grid gap-5 w-[70%] max-md:w-full">
           <img
             class="w-full"
             src="../../assets/img/services/services1.png"
