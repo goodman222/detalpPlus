@@ -44,6 +44,10 @@
   --font-bowler: "Bowler";
   --color-dark-blue: #16246d;
   --color-dark-bg: #0a0e28;
+  --color-menu-btn: #373636;
   --color-dark-filter: rgba(0, 0, 0, 0.7);
   --page: 852px;
+  /* --breakpoint-md: initial;*/
+  --breakpoint-md: 852px;
+  --breakpoint-footer-mobile: 490px;
 }

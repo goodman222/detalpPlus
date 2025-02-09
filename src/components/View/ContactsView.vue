@@ -1,3 +1,7 @@
-<script setup></script>
+<script setup>
+import ContactsSection from "../sections/ContactsSection.vue";
+</script>
 
-<template><p class="underline">ContactsView</p></template>
+<template>
+  <ContactsSection></ContactsSection>
+</template>

@@ -9,7 +9,7 @@ const props = defineProps({
   <input
     :type="props.type"
     :placeholder="props.placeholder"
-    class="w-full mb-4 font-manrope text-sm text-[#838383] border-white border-solid rounded-0 p-3.5"
+    class="w-full mb-4 font-manrope text-sm text-[#b7b5b5] border-white border-solid rounded-0 p-3.5"
   />
 </template>
 <style>

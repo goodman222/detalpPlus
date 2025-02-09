@@ -5,10 +5,12 @@ import FooterItem from "./FooterItem.vue";
 import Logo from "./Logo.vue";
 </script>
 <template>
-  <footer class="bg-footer flex flex-col py-10">
+  <footer class="bg-footer flex flex-col py-10 max-md:px-3.5">
     <div class="max-w-(--page) w-full mx-auto flex flex-col">
-      <div class="flex flex-row items-start justify-between">
-        <div>
+      <div
+        class="flex flex-row items-start justify-between max-footer-mobile:flex-col-reverse"
+      >
+        <div class="max-footer-mobile:mt-4 max-footer-mobile:order-1">
           <FooterHeader>Меню</FooterHeader>
           <FooterItem><RouterLink to="/">Главная</RouterLink></FooterItem>
           <FooterItem
@@ -28,7 +30,7 @@ import Logo from "./Logo.vue";
             ><RouterLink to="/contacts">Контакты</RouterLink></FooterItem
           >
         </div>
-        <div>
+        <div class="max-footer-mobile:mt-0">
           <FooterHeader>Контакты</FooterHeader>
           <FooterItem
             >Гск Жилстрой, ​Нефтеюганск, Ханты-Мансийский автономный округ —
@@ -39,8 +41,8 @@ import Logo from "./Logo.vue";
           <FooterItem>+7 (922) 965-94-55</FooterItem>
           <FooterItem>Dplus3@mail.ru</FooterItem>
         </div>
-        <div>
-          <Logo :light-logo="true"></Logo>
+        <div class="max-footer-mobile:order-2">
+          <Logo class="max-footer-mobile:mb-2" :light-logo="true"></Logo>
           <FooterItem>ООО «Деталь+»</FooterItem>
           <FooterItem>ИНН 8604073694</FooterItem>
           <FooterItem>КПП 860401001</FooterItem>

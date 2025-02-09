@@ -1,9 +1,11 @@
 <script setup>
 import PageHeader from "../PageHeader.vue";
-import Gallery from "../Gallery.vue";
+import Courusel from "../Carousel.vue";
+const imgArray = ["equipment1.png", "equipment2.png", "equipment3.png"];
+const folder = `src/assets/img/equipment/`;
 </script>
 <template>
-  <div class="w-full bg-grey-background py-11">
+  <div class="w-full bg-grey-background py-11 max-md:bg-white max-md:px-3.5">
     <div class="w-full max-w-(--page) mx-auto flex flex-col">
       <PageHeader>
         <template v-slot:header>оборудование</template>
@@ -23,7 +25,13 @@ import Gallery from "../Gallery.vue";
           <li>⁠Сварочный инверторный аппарат на 400 А</li>
           <li>⁠Аппарат плазменной резки 70А</li>
         </ol>
-        <Gallery></Gallery>
+        <Courusel
+          :folder="folder"
+          :imgArray="imgArray"
+          :visibleLength="1"
+          :height="`330px`"
+          class="max-md:hidden"
+        ></Courusel>
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@ import Carousel from "../Carousel.vue";
 const imgArray = [
   "cert1.png",
   "cert2.png",
-  "cert2.png",
+  "cert3.png",
   "cert4.png",
   "cert5.png",
 ];
@@ -19,6 +19,8 @@ const folder = `src/assets/img/certs/`;
         class="mx-auto mb-12"
         :folder="folder"
         :imgArray="imgArray"
+        :visibleLength="5"
+        :height="`230px`"
       ></Carousel>
     </div>
   </section>
